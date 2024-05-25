@@ -1,7 +1,21 @@
 
+import sys
 from django.shortcuts import HttpResponse
 import subprocess
 import os
+
+from Scripts.main import some_function
+
+script_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scripts')
+if script_path not in sys.path:
+    sys.path.append(script_path)
+
+
+
+
+def some_view(request):
+    result = some_function()
+    return HttpResponse(result)
 
 
 

@@ -655,3 +655,9 @@ window.configure(menu=menubar)
 window.mainloop()
 
 ####################################################################################################
+
+
+
+
+def some_function():
+    return "Hello from main.py!"

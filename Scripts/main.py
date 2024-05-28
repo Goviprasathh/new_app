@@ -656,8 +656,5 @@ window.mainloop()
 
 ####################################################################################################
 
-
-
-
-def some_function():
-    return "Hello from main.py!"
+if __name__ == "__main__":
+    window.mainloop()
